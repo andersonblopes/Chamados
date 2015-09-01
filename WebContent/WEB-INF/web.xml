@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Chamados</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+  <servlet>
+    <description>Pagina Principal</description>
+    <display-name>SIndex</display-name>
+    <servlet-name>SIndex</servlet-name>
+    <servlet-class>IndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SIndex</servlet-name>
+    <url-pattern>/Index</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Novo Chamado</description>
+    <display-name>SNovoChamado</display-name>
+    <servlet-name>SNovoChamado</servlet-name>
+    <servlet-class>NovoChamadoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SNovoChamado</servlet-name>
+    <url-pattern>/NovoChamado</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Listagem de Chamados</description>
+    <display-name>SListaChamados</display-name>
+    <servlet-name>SListaChamados</servlet-name>
+    <servlet-class>ListaChamadosServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SListaChamados</servlet-name>
+    <url-pattern>/ListaChamados</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Editar Chamado</description>
+    <display-name>SEditarChamado</display-name>
+    <servlet-name>SEditarChamado</servlet-name>
+    <servlet-class>EditarChamadoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SEditarChamado</servlet-name>
+    <url-pattern>/EditarChamado</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Login do Sistema</description>
+    <display-name>SLogin</display-name>
+    <servlet-name>SLogin</servlet-name>
+    <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SLogin</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Gerenciar Usuários</description>
+    <display-name>SUsuarios</display-name>
+    <servlet-name>SUsuarios</servlet-name>
+    <servlet-class>UsuariosServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SUsuarios</servlet-name>
+    <url-pattern>/Usuarios</url-pattern>
+  </servlet-mapping>
+</web-app>
